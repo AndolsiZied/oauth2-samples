@@ -1,0 +1,17 @@
+server:
+ port: 8381
+
+logging:
+ level:
+   org.springframework.security: DEBUG
+
+security:
+ oauth2:
+   resource:
+     jwt:
+       keyUri: http://localhost:8080/auth/oauth/token_key
+
+resourceServerClient:
+ accessTokenUri: http://localhost:8080/auth/oauth/token
+ clientId: client-1
+ clientSecret: 94c96b4e-27fc-424e-8575-da9546b5cb30
